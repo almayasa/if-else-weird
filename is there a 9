@@ -1,0 +1,12 @@
+#Given a list of integers, return True if one of the first 4 elements in the list is a 9. The list length may be less than 4.
+
+def array_front9(numbers):
+  end = len(numbers)
+  if end > 4:
+    end = 4
+  
+  for i in range(end):
+    if numbers[i] == 9:
+      return True
+  return False
+  
